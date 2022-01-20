@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<produce>
+    <product>
+    <name>Grape</name>
+    </product>
+    <product>
+    <name>Apple</name>
+    </product>
+    <product>
+    <name>Pears</name>
+    </product>
+    <product>
+    <name>Watermelon</name>
+    </product>
+</produce>
