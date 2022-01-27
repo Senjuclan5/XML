@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="produce.css"?>
+<produce>
+    <product>
+        <name>Grape</name>
+        <color>green</color>
+    </product>
+    <product>
+        <name>Apple</name>
+        <color>red</color>
+    </product>
+    <product>
+        <name>Pears</name>
+        <color>light green</color>
+    </product>
+    <product>
+        <name>Watermelon</name>
+        <color>green</color>
+    </product>
+</produce>
+

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="produce.css">
+</head>
+<body>
+    <div>
+    <B>name:</b> <span id="name"></span><br>
+    <B>color:</b> <span id="color"></span><br>
+    </div>
+
+    <script>
+        if(window.XMLHttpRequest)
+        {//code
+            xmlhttp=new XMLHttpRequest();
+        }
+        else
+        {
+            //code
+            xmlhttp=new ActiveXObject("Microsft.XMLHttpRequest");
+        }
+
+        xmlhttp.open("GET", "prduce.xml" ,false);// this will open our xml file
+        xmlhttp.send();// this will send request to file
+        xmlDoc=xmlhttp.responseXML;
+        document.getElementsByID("name").innerHTML= xmlDoc.getElementsByTagName("name")[0].childnodeValue;
+        //this will return the tag value 
+        document.getElementByID("color").innerHTML=xmlDoc.getElementsByTagName("color")[0].childnodes[0].nodeValue;
+        
+
+    </script>
+
+</body>
+</html>
